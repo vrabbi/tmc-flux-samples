@@ -108,6 +108,7 @@ rules:
   - pods
   - serviceaccounts
   - services
+  - secrets
   verbs:
   - get
   - list
@@ -208,6 +209,14 @@ rules:
   - tlsroutes/status
   verbs:
   - update
+- apiGroups:
+  - gateway.networking.k8s.io
+  resources:
+  - referencegrants
+  verbs:
+  - get
+  - list
+  - watch
 - apiGroups:
   - networking.k8s.io
   resources:
