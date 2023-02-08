@@ -71,8 +71,6 @@ rules:
   - update
 - apiGroups:
   - rbac.authorization.k8s.io
-  resourceNames:
-  - contour
   resources:
   - roles
   verbs:
@@ -156,21 +154,14 @@ rules:
   resources:
   - clusterrolebindings
   - clusterroles
+  - rolebindings
+  - roles
   verbs:
   - create
   - get
   - list
   - patch
   - update
-  - watch
-- apiGroups:
-  - rbac.authorization.k8s.io
-  resources:
-  - rolebindings
-  - roles
-  verbs:
-  - get
-  - list
   - watch
 - apiGroups:
   - ""
