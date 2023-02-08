@@ -255,8 +255,6 @@ rules:
   - update
 - apiGroups:
   - policy
-  resourceNames:
-  - vmware-system-restricted
   resources:
   - podsecuritypolicies
   verbs:
