@@ -28,8 +28,6 @@ rules:
   - update
 - apiGroups:
   - apps
-  resourceNames:
-  - envoy
   resources:
   - daemonsets
   verbs:
@@ -39,8 +37,6 @@ rules:
   - update
 - apiGroups:
   - apps
-  resourceNames:
-  - contour
   resources:
   - deployments
   verbs:
@@ -60,8 +56,6 @@ rules:
   - update
 - apiGroups:
   - rbac.authorization.k8s.io
-  resourceNames:
-  - contour-rolebinding
   resources:
   - rolebindings
   verbs:
