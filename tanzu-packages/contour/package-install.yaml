@@ -4,7 +4,7 @@ metadata:
   annotations:
     tkg.tanzu.vmware.com/tanzu-package-ClusterRole: contour-tkg-system
     tkg.tanzu.vmware.com/tanzu-package-ClusterRoleBinding: contour-tkg-system
-    tkg.tanzu.vmware.com/tanzu-package-Secret: contour-tkg-system
+    tkg.tanzu.vmware.com/tanzu-package-Secret: contour-tkg-system-values
     tkg.tanzu.vmware.com/tanzu-package-ServiceAccount: contour-tkg-system-sa
   name: contour
   namespace: tkg-system
@@ -17,4 +17,4 @@ spec:
   serviceAccountName: contour-tkg-system-sa
   values:
   - secretRef:
-      name: contour-tkg-system
+      name: contour-tkg-system-values
